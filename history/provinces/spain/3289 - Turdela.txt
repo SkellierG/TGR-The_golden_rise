@@ -1,0 +1,9 @@
+owner = ZAR
+controller = ZAR
+add_core = ZAR
+add_core = BSQ
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+
+

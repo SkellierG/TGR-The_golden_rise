@@ -1,0 +1,8 @@
+owner = RON
+controller = RON
+add_core = RON
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+
+

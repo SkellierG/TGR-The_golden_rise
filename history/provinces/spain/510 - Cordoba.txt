@@ -1,0 +1,8 @@
+owner = COR
+controller = COR
+add_core = COR
+add_core = MUR
+add_core = SPA
+trade_goods = grain
+life_rating = 35
+1861.1.1 = { railroad = 3 }

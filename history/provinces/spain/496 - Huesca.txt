@@ -1,0 +1,8 @@
+owner = ZAR
+controller = ZAR
+add_core = ZAR
+add_core = AGN
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+1861.1.1 = { railroad = 3 }

@@ -1,0 +1,388 @@
+
+political_decisions = {
+
+	become_al-andalus = {
+		potential = {
+			OR = {
+				tag = COR
+				tag = GRA
+				tag = BAZ
+				tag = TOL
+				tag = HUE
+				tag = DNA
+				tag = VAL
+				tag = MUR
+			}
+			NOT = { exists = ADS }
+		}
+	
+		allow = {
+			war = no
+			owns = 1326
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = COR
+				COR = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = GRA
+				GRA = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = BAZ
+				BAZ = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = TOL
+				TOL = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = HUE
+				HUE = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = DNA
+				DNA = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = VAL
+				VAL = { all_core = { owned_by = THIS } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				is_sphere_leader_of = MUR
+				MUR = { all_core = { owned_by = THIS } }
+			}
+		}
+	
+		effect = {
+			prestige = 40
+			add_accepted_culture = bedouin
+			add_accepted_culture = mashriqi
+			POR_525 = { add_core = ADS } #Alentejo
+			POR_521 = { add_core = ADS } #Estremadura
+			POR_518 = { add_core = ADS } #Douro
+			SPA_513 = { add_core = ADS } #Granada
+			SPA_512 = { add_core = ADS } #Andalucia
+			SPA_506 = { add_core = ADS } #Murcia
+			SPA_503 = { add_core = ADS } #Valencia
+			SPA_487 = { add_core = ADS } #Castilla la Nueva
+			SPA_484 = { add_core = ADS } #Extremadura
+			random_country = {
+				limit = {
+					tag = COR
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = COR }
+			}
+			random_country = {
+				limit = {
+					tag = COR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = GRA
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = GRA }
+			}
+			random_country = {
+				limit = {
+					tag = GRA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = BAZ
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = BAZ }
+			}
+			random_country = {
+				limit = {
+					tag = BAZ
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = TOL
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = TOL }
+			}
+			random_country = {
+				limit = {
+					tag = TOL
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = HUE
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = HUE }
+			}
+			random_country = {
+				limit = {
+					tag = HUE
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = DNA
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = DNA }
+			}
+			random_country = {
+				limit = {
+					tag = DNA
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = VAL
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = VAL }
+			}
+			random_country = {
+				limit = {
+					tag = VAL
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			random_country = {
+				limit = {
+					tag = MUR
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = MUR }
+			}
+			random_country = {
+				limit = {
+					tag = MUR
+					exists = yes
+					ai = no
+				}
+				country_event = 11101
+			}
+			any_owned = {
+				remove_core = COR
+				remove_core = GRA
+				remove_core = BAZ
+				remove_core = TOL
+				remove_core = HUE
+				remove_core = DNA
+				remove_core = VAL
+				remove_core = MUR
+			}
+			change_tag = ADS
+			capital = 510
+			
+			1163 = { remove_core = SPA }
+			1164 = { remove_core = SPA }
+		}
+			ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_Al-andalus = {
+		picture = become_saudi_arabia
+		potential = {
+			NOT = {
+				tag = FRA
+				tag = ENG
+				tag = SPA
+				tag = POR
+				tag = CAS
+				tag = AGN
+				tag = CAT
+				tag = GLC
+				tag = ATR
+				tag = BSQ
+				tag = COR
+				tag = GRA
+				tag = BAZ
+				tag = TOL
+				tag = HUE
+				tag = DNA
+				tag = VAL
+				tag = MUR
+			}
+			NOT = { exists = ADS }
+			OR = {
+				is_sphere_leader_of = COR
+				is_sphere_leader_of = GRA
+				is_sphere_leader_of = BAZ
+				is_sphere_leader_of = TOL
+				is_sphere_leader_of = HUE
+				is_sphere_leader_of = DNA
+				is_sphere_leader_of = VAL
+				is_sphere_leader_of = MUR
+				any_owned_province = {
+					OR = {
+						region = POR_525
+						region = POR_521
+						region = POR_518
+						region = SPA_513
+						region = SPA_512
+						region = SPA_506
+						region = SPA_503
+						region = SPA_487
+						region = SPA_484
+					}
+				}
+			}
+		}
+	
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = COR ai = yes }
+				COR = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = GRA ai = yes }
+				GRA = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = BAZ ai = yes }
+				BAZ = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = TOL ai = yes }
+				TOL = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = HUE ai = yes }
+				HUE = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = DNA ai = yes }
+				DNA = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = VAL ai = yes }
+				VAL = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+			OR = {
+				has_country_flag = taifa_andalus
+				AND = { is_sphere_leader_of = MUR ai = yes }
+				MUR = { all_core = { OR = { owned_by = THIS owner = { ai = yes in_sphere = THIS } } } }
+			}
+		}
+	
+		effect = {
+			prestige = 30
+			POR_525 = { add_core = ADS } #Alentejo
+			POR_521 = { add_core = ADS } #Estremadura
+			POR_518 = { add_core = ADS } #Douro
+			SPA_513 = { add_core = ADS } #Granada
+			SPA_512 = { add_core = ADS } #Andalucia
+			SPA_506 = { add_core = ADS } #Murcia
+			SPA_503 = { add_core = ADS } #Valencia
+			SPA_487 = { add_core = ADS } #Castilla la Nueva
+			SPA_484 = { add_core = ADS } #Extremadura
+			#any_owned = {
+				#limit = {
+					#OR = {
+						#is_core = COR
+						#is_core = GRA
+						#is_core = BAZ
+						#is_core = TOL
+						#is_core = HUE
+						#is_core = DNA
+						#is_core = VAL
+						#is_core = MUR
+					#}
+				#}
+				#add_core = ADS
+			#}
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = COR
+						tag = GRA
+						tag = BAZ
+						tag = TOL
+						tag = HUE
+						tag = DNA
+						tag = VAL
+						tag = MUR
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				remove_core = COR
+				remove_core = GRA
+				remove_core = BAZ
+				remove_core = TOL
+				remove_core = HUE
+				remove_core = DNA
+				remove_core = VAL
+				remove_core = MUR
+			}
+			
+			any_country = {
+				limit = { in_sphere = THIS }
+				any_owned = { limit = { is_core = ADS } secede_province = THIS }
+			}
+			
+			release_vassal = ADS
+			relation = { who = ADS value = 50 }
+			diplomatic_influence = { who = ADS value = 200 }
+			ADS = { tech_school = unciv_tech_school }
+			
+			1163 = { remove_core = SPA }
+			1164 = { remove_core = SPA }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,12 @@
+owner = MUR
+controller = MUR
+add_core = MUR
+add_core = VAL
+add_core = SPA
+trade_goods = iron
+life_rating = 35
+naval_base = 1
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 3
+}

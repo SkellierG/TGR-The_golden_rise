@@ -1,0 +1,8 @@
+owner = AGE
+controller = AGE
+add_core = AGE
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+
+

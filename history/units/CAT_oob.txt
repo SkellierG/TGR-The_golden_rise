@@ -1,0 +1,139 @@
+#Sphere of Influence
+#Europe
+SPA = {
+	value = -100	#relation
+	level = 1		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+POR = {
+	value = 120	#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+leader = {
+	name = "Fernando Lopez"
+	date = 1842.1.1
+	type = land
+	personality = diplomatic
+	background = war_college
+	prestige = 0.0
+}
+
+#Army
+army = {
+	name = "Ejército Real De Castilla"
+	location = 498
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = infantry
+		home = 498
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 498
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 498
+	}
+
+	regiment = {
+		name= "3. Guardia Real"
+		type = guard
+		home = 499
+	}
+
+	regiment = {
+		name= "1. Brigada de Infantería 'El Ramillete'"
+		type = artillery
+		home = 499
+	}
+
+	regiment = {
+		name= "1. Brigada de Ingenieros"
+		type = engineer
+		home = 502
+	}
+
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = cuirassier
+		home = 501
+	}
+	
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = cuirassier
+		home = 500
+	}
+	
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = cuirassier
+		home = 502
+	}
+
+}
+
+navy = {
+	name = "Armada Real Catalan"
+	location = 498
+	ship = {
+		name= "San Raimundo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Héroe"
+		type = manowar
+	}
+
+	ship = {
+		name= "San Pablo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Ceres"
+		type = frigate
+	}
+
+	ship = {
+		name= "Gloria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Asunción"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Atocha"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Sabina"
+		type = frigate
+	}
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}

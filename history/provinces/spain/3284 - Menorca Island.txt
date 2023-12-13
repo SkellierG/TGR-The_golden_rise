@@ -1,0 +1,9 @@
+owner = DNA
+controller = DNA
+add_core = DNA
+add_core = CAT
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+
+

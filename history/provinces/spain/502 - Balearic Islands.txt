@@ -1,0 +1,9 @@
+owner = DNA
+controller = DNA
+add_core = DNA
+add_core = VAL
+add_core = AGN
+add_core = SPA
+trade_goods = cattle
+life_rating = 35
+1861.1.1 = { railroad = 3 }

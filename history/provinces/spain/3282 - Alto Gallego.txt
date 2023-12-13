@@ -1,0 +1,8 @@
+owner = AGN
+controller = AGN
+add_core = AGN
+add_core = SPA
+trade_goods = wool
+life_rating = 35
+
+

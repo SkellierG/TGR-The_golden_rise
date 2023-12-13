@@ -1,0 +1,6 @@
+owner = FAR
+controller = FAR
+add_core = FAR
+add_core = POR
+trade_goods = fruit
+life_rating = 35
